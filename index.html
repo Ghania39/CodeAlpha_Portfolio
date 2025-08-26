@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghania's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      background-color: #EDF4F2;
+      color: #31473A;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    nav {
+      background-color: #31473A;
+      border-bottom: 2px solid #EDF4F2;
+    }
+    nav a {
+      color: #ffffff !important;
+    }
+    nav a:hover {
+      color: #cccccc !important;
+    }
+    header {
+      background-color: #31473A;
+      color: white;
+      padding: 40px 0;
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .card.custom-card {
+      background-color: #31473A;
+      color: #EDF4F2;
+      border: none;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .card.custom-card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease-in-out;
+    }
+    #skills {
+      background-color: #31473A;
+      color: #EDF4F2;
+      padding: 40px 0;
+    }
+    #skills .card {
+      background-color: #EDF4F2;
+      color: #31473A;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #31473A;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .contact-card {
+      background-color: #31473A;
+      color: #EDF4F2;
+      border: 2px solid #EDF4F2;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      transition: transform 0.3s ease;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Ghania</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="text-center">
+  <div class="container">
+    <h1 class="fw-bold">Ghania Adnan</h1>
+    <p class="lead">Computer Science Student | Web Developer | Python Enthusiast</p>
+  </div>
+</header>
+
+<section class="container" id="about">
+  <h3 class="section-title">About Me</h3>
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <p><strong>Address:</strong> Street , House ,  Block, New Multan</p>
+      <p><strong>Phone:</strong> 0315-*******</p>
+      <p><strong>Email:</strong> ghania@gmail.com</p>
+      <p>I am a second-year Computer Science student at FAST holding a 3.6 CGPA. I aim to secure an internship to apply my skills in programming, DSA, and software development. I'm committed to continuous learning, innovation, and bridging academic knowledge with professional excellence. I thrive in collaborative environments and love turning technical ideas into impactful real-world solutions. My academic journey has equipped me with a solid foundation in problem-solving, software development, and a growing passion for cybersecurity and systems programming.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h3 class="section-title text-white">Skills</h3>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card p-3 mb-4">
+          <h5>Programming</h5>
+          <p>Python, C++, PHP</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 mb-4">
+          <h5>Web Development</h5>
+          <p>HTML, CSS, Bootstrap</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 mb-4">
+          <h5>Databases & Tools</h5>
+          <p>SQL, Git, GitHub, VS Code</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="projects">
+  <h3 class="section-title">Projects</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card custom-card">
+        <h5 class="card-title">Agricasa</h5>
+        <p class="card-text">A smart agriculture recommendation system that suggests optimal crops based on current weather patterns and soil health. It helps reduce farming costs, increase yield, and support sustainable agricultural practices using real-time environmental data analysis.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card custom-card">
+        <h5 class="card-title">File Compression Tool</h5>
+        <p class="card-text">A robust desktop utility for compressing large text and binary files using lossless data compression techniques. It includes features such as error detection, system file handling, and progress visualization, built with a focus on DSA algorithms and memory optimization.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card custom-card">
+        <h5 class="card-title">Inventory Management</h5>
+        <p class="card-text">An inventory system developed for a solar panel distribution company, offering automated stock updates, PDF invoice generation, and real-time sales analytics. It improves efficiency, reduces manual tracking, and ensures better business insights through data visualization.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card custom-card">
+        <h5 class="card-title">Secure File Locker</h5>
+        <p class="card-text">A desktop application that encrypts and hides sensitive files using a user-defined password and optional email-based OTP verification. Ideal for protecting personal or corporate documents, this tool ensures security with AES encryption and stealth mode capabilities.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 offset-md-3">
+      <div class="card custom-card text-center">
+        <h5 class="card-title">Hangman Game (Assembly)</h5>
+        <p class="card-text">A retro-style word guessing game built in x86 Assembly language. It demonstrates low-level CPU control, memory addressing, and custom logic implementation. The game tracks wrong guesses, displays remaining tries, and visually responds to user input at the machine level.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container text-center" id="resume">
+  <h3 class="section-title">Resume</h3>
+  <a href="resume.pdf" class="btn btn-lg text-white" style="background-color: #31473A;" download>
+    <i class="bi bi-download"></i> Download My Resume
+  </a>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h3 class="section-title text-center">Contact</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="contact-card text-center">
+          <p><i class="bi bi-envelope-fill"></i> <strong>Email:</strong> ghania@gmail.com</p>
+          <p><i class="bi bi-telephone-fill"></i> <strong>Phone:</strong> 0315-*******</p>
+          <p><i class="bi bi-globe2"></i> <strong>Languages:</strong> Urdu, English</p>
+          <hr>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="https://linkedin.com" target="_blank" class="text-decoration-none text-white fs-4"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" class="text-decoration-none text-white fs-4"><i class="bi bi-github"></i></a>
+            <a href="mailto:ghania@gmail.com" class="text-decoration-none text-white fs-4"><i class="bi bi-envelope-paper-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h3 class="section-title">Achievements & Activities</h3>
+  <ul>
+    <li>Qualified for final round of Huawei ICT Competition</li>
+    <li>Certified by Cosmic Code for participation</li>
+    <li>Project deployed in Al Shams Enterprises Pvt Ltd</li>
+    <li>Director of Content & Documentation – Sports Society, UET Narowal</li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 Ghania Adnan. All rights reserved.</p>
+  <div class="mt-2">
+    <a href="https://linkedin.com" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com" class="text-white mx-2"><i class="bi bi-github"></i></a>
+    <a href="mailto:ghaniaadnan39@gmail.com" class="text-white mx-2"><i class="bi bi-envelope-fill"></i></a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghania's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      background-color: #EDF4F2;
+      color: #31473A;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    nav {
+      background-color: #31473A;
+      border-bottom: 2px solid #EDF4F2;
+    }
+    nav a {
+      color: #ffffff !important;
+    }
+    nav a:hover {
+      color: #cccccc !important;
+    }
+    header {
+      background-color: #31473A;
+      color: white;
+      padding: 40px 0;
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .card.custom-card {
+      background-color: #31473A;
+      color: #EDF4F2;
+      border: none;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card.custom-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    #skills {
+      background-color: #31473A;
+      color: #EDF4F2;
+      padding: 40px 0;
+    }
+    #skills .card {
+      background-color: #EDF4F2;
+      color: #31473A;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    #skills .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background-color: #31473A;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      border-top: 2px solid #EDF4F2;
+    }
+    .contact-card {
+      background-color: #31473A;
+      color: #EDF4F2;
+      border: 2px solid #EDF4F2;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      transition: transform 0.3s ease;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+    /* Internship Projects Styling */
+    #internship-projects .custom-card {
+      background-color: #31473A;
+      color: #EDF4F2;
+      border: none;
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    #internship-projects .custom-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    #internship-projects a.btn {
+      margin-top: auto;
+      background-color: #EDF4F2;
+      color: #31473A;
+      font-weight: bold;
+    }
+    #internship-projects a.btn:hover {
+      background-color: #ccc;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Ghania</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#internship-projects">Internship Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="text-center">
+  <div class="container">
+    <h1 class="fw-bold">Ghania Adnan</h1>
+    <p class="lead">Computer Science Student | Web Developer | Python Enthusiast</p>
+  </div>
+</header>
+
+<section class="container" id="about">
+  <h3 class="section-title">About Me</h3>
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <p><strong>Address:</strong> Street 6, House 36, S Block, New Multan</p>
+      <p><strong>Phone:</strong> 0315-3920720</p>
+      <p><strong>Email:</strong> ghaniaadnan39@gmail.com</p>
+      <p>I am a second-year Computer Science student at UET Lahore (Narowal Campus), holding a 3.39 CGPA. I aim to secure an internship to apply my skills in programming, DSA, and software development...</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h3 class="section-title text-white">Skills</h3>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card p-3 mb-4">
+          <h5>Programming</h5>
+          <p>Python, C++, PHP</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 mb-4">
+          <h5>Web Development</h5>
+          <p>HTML, CSS, Bootstrap</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 mb-4">
+          <h5>Databases & Tools</h5>
+          <p>SQL, Git, GitHub, VS Code</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="projects">
+  <h3 class="section-title">
+    Projects 
+    <a href="https://github.com/yourusername" target="_blank" class="text-dark ms-2"><i class="bi bi-github"></i></a>
+  </h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card custom-card">
+        <h5 class="card-title">Agricasa <a href="https://github.com/yourusername/agricasa" target="_blank" class="text-white"><i class="bi bi-github"></i></a></h5>
+        <p class="card-text">A smart agriculture recommendation system...</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card custom-card">
+        <h5 class="card-title">File Compression Tool <a href="https://github.com/yourusername/file-compressor" target="_blank" class="text-white"><i class="bi bi-github"></i></a></h5>
+        <p class="card-text">A robust desktop utility for compressing large text and binary files...</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card custom-card">
+        <h5 class="card-title">Inventory Management <a href="https://github.com/yourusername/inventory" target="_blank" class="text-white"><i class="bi bi-github"></i></a></h5>
+        <p class="card-text">An inventory system developed for a solar panel distribution company...</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card custom-card">
+        <h5 class="card-title">Secure File Locker <a href="https://github.com/yourusername/secure-locker" target="_blank" class="text-white"><i class="bi bi-github"></i></a></h5>
+        <p class="card-text">A desktop application that encrypts and hides sensitive files...</p>
+      </div>
+    </div>
+    <div class="col-md-6 offset-md-3">
+      <div class="card custom-card text-center">
+        <h5 class="card-title">Hangman Game (Assembly) <a href="https://github.com/yourusername/hangman" target="_blank" class="text-white"><i class="bi bi-github"></i></a></h5>
+        <p class="card-text">A retro-style word guessing game built in x86 Assembly language...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Internship Projects Section -->
+<section class="container" id="internship-projects">
+  <h3 class="section-title">
+    Internship Projects 
+    <a href="https://github.com/yourusername" target="_blank" class="text-dark ms-2"><i class="bi bi-github"></i></a>
+  </h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card custom-card h-100 text-center">
+        <h5 class="card-title">Image Gallery <a href="https://github.com/yourusername/image-gallery" target="_blank" class="text-white"><i class="bi bi-github"></i></a></h5>
+        <p class="card-text">A responsive and interactive image gallery built with HTML, CSS, and JavaScript...</p>
+        <a href="https://github.com/yourusername/image-gallery" target="_blank" class="btn btn-light"><i class="bi bi-github"></i> View on GitHub</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card custom-card h-100 text-center">
+        <h5 class="card-title">Calculator <a href="https://github.com/yourusername/calculator" target="_blank" class="text-white"><i class="bi bi-github"></i></a></h5>
+        <p class="card-text">A teal-green scientific calculator with 3D-style buttons...</p>
+        <a href="https://github.com/yourusername/calculator" target="_blank" class="btn btn-light"><i class="bi bi-github"></i> View on GitHub</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card custom-card h-100 text-center">
+        <h5 class="card-title">File Compressor <a href="https://github.com/yourusername/file-compressor" target="_blank" class="text-white"><i class="bi bi-github"></i></a></h5>
+        <p class="card-text">A desktop utility that compresses text/binary files with lossless algorithms...</p>
+        <a href="https://github.com/yourusername/file-compressor" target="_blank" class="btn btn-light"><i class="bi bi-github"></i> View on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container text-center" id="resume">
+  <h3 class="section-title">Resume</h3>
+  <a href="resume.pdf" class="btn btn-lg text-white" style="background-color: #31473A;" download>
+    <i class="bi bi-download"></i> Download My Resume
+  </a>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h3 class="section-title text-center">Contact</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="contact-card text-center">
+          <p><i class="bi bi-envelope-fill"></i> <strong>Email:</strong> ghaniaadnan39@gmail.com</p>
+          <p><i class="bi bi-telephone-fill"></i> <strong>Phone:</strong> 0315-3920720</p>
+          <p><i class="bi bi-globe2"></i> <strong>Languages:</strong> Urdu, English</p>
+          <hr>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="https://linkedin.com" target="_blank" class="text-decoration-none text-white fs-4"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" class="text-decoration-none text-white fs-4"><i class="bi bi-github"></i></a>
+            <a href="mailto:ghaniaadnan39@gmail.com" class="text-decoration-none text-white fs-4"><i class="bi bi-envelope-paper-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h3 class="section-title">Achievements & Activities</h3>
+  <ul>
+    <li>Qualified for final round of Huawei ICT Competition</li>
+    <li>Certified by Cosmic Code for participation</li>
+    <li>Project deployed in Al Shams Enterprises Pvt Ltd</li>
+    <li>Director of Content & Documentation – Sports Society, UET Narowal</li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 Ghania Adnan. All rights reserved.</p>
+  <div class="mt-2">
+    <a href="https://linkedin.com" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com" class="text-white mx-2"><i class="bi bi-github"></i></a>
+    <a href="mailto:ghaniaadnan39@gmail.com" class="text-white mx-2"><i class="bi bi-envelope-fill"></i></a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
